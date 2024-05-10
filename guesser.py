@@ -14,4 +14,10 @@ else:
     quit()
 
 random_number = random.randint(0, range_limit)
-print(random_number)
+
+while True:
+    user_option = input("Make a guess: ")
+    if user_option.isdigit():
+        user_option = int(user_option)
+    else:
+        print("Enter a number")
