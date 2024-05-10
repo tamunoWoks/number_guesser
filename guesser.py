@@ -21,3 +21,10 @@ while True:
         user_option = int(user_option)
     else:
         print("Enter a number")
+        continue
+
+    if user_option == random_number:
+        print("You are correct!")
+        break
+    else:
+        print("You got it wrong!")
