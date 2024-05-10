@@ -12,3 +12,6 @@ if range_limit.isdigit():
 else:
     print('You must enter a number')
     quit()
+
+random_number = random.randint(0, range_limit)
+print(random_number)
