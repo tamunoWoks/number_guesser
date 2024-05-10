@@ -29,6 +29,9 @@ while True:
         print("You are correct!")
         break
     else:
-        print("You got it wrong!")
+        if user_option > random_number:
+            print("You were above the number!")
+        else:
+            print("You were below the number!")
 
 print(f'You got it in {guesses} guesses')
