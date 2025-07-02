@@ -15,3 +15,16 @@ secret_number = randint(1, 20)
 
 # Display game instructions
 print('I am thinking of a number between 1 and 20.')
+
+# Ask the player to guess 6 times.
+for guesses_taken in range(1, 7):
+  print('Take a guess.')
+  guess = int(input('>'))
+
+  # Evaluate player guess
+  if guess < secret_number:
+    print('Your guess is too low.')
+  elif guess > secret_number:
+    print('Your guess is too high.')
+  else:
+    break # This condition is the correct guess!
