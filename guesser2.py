@@ -28,3 +28,9 @@ for guesses_taken in range(1, 7):
     print('Your guess is too high.')
   else:
     break # This condition is the correct guess!
+
+# After the loop ends, check why it ended:
+if guess == secret_number:
+  print('Good job! You got it in ' + str(guesses_taken) + ' guesses!')
+else:
+  print('Nope. The number was ' + str(secret_number))
